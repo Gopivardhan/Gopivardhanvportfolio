@@ -91,12 +91,12 @@ const Experience = () => {
 
   return (
     <section
-      id="experience"
+      id="education"
       className="flex-center md:mt-40 mt-20 section-padding xl:px-0"
     >
       <div className="w-full h-full md:px-20 px-5">
         <TitleHeader
-          title="Professional Work Experience"
+          title="My Education"
           sub="💼 My Career Overview"
         />
         <div className="mt-32 relative">
@@ -105,9 +105,7 @@ const Experience = () => {
               <div key={card.title} className="exp-card-wrapper">
                 <div className="xl:w-2/6">
                   <GlowCard card={card}>
-                    <div>
-                      <img src={card.imgPath} alt="exp-img" />
-                    </div>
+                    {/* Removed imgPath image display */}
                   </GlowCard>
                 </div>
                 <div className="xl:w-4/6">

@@ -1,0 +1,111 @@
+export const certificates = [
+  {
+    title: "AWS Academy Cloud Operations",
+    issuer: "Amazon Web Services (AWS)",
+    date: "Issued Nov 2022",
+    url: "https://www.credly.com/badges/b93aa703-08b6-4068-be4d-bc4a5b74754a/linked_in_profile",
+  },
+  {
+    title: "Database Foundations",
+    issuer: "Oracle",
+    date: "Issued March 2023",
+    url: "https://drive.google.com/file/d/1YW563mZv7xiSHdM48JSqs4gLbnkouxhj/view?usp=sharing",
+  },
+  {
+    title: "Building Web Applications in PHP",
+    issuer: "Coursera",
+    date: "Issued Apr 2023",
+    url: "https://www.coursera.org/account/accomplishments/verify/B5A9UK4YB7ZS?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course",
+  },
+  {
+    title: "Prompt Engineer",
+    issuer: "Coursera",
+    date: "Issued Sep 2023",
+    url: "https://www.coursera.org/account/accomplishments/verify/39EELQY3PSMN?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course",
+  },
+  {
+    title: "Google Certifications",
+    issuer: "Google",
+    date: "Issued jan 2024",
+    url: "https://www.cloudskillsboost.google/public_profiles/02dff3b1-d85f-48d8-9c4a-156cc41b9d6f",
+  },
+  {
+    title: "Successful Mindset",
+    issuer: "HP Life",
+    date: "Issued Mar 2023",
+    url: "",
+  },
+  {
+    title: " JPMorgan Chase - Investment Banking Job Simulation",
+    issuer: "Forage",
+    date: "Issued Jan 2025",
+    url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ZtgA28qyexifyEdHE/YD2kY95RQxQtXxFTS_ZtgA28qyexifyEdHE_oPAgidquWhMLex7zf_1736014025612_completion_certificate.pdf",
+  },
+  {
+    title: "Tata Group - ESG Job Simulation",
+    issuer: "Forage",
+    date: "Issued May 2024",
+    url: "https://www.pmi.org/your-badge-url",
+  },
+  {
+    title: "Smart Contracts",
+    issuer: "Coursera",
+    date: "Issued Sep 2022",
+    url: "https://www.coursera.org/account/accomplishments/certificate/RJ4Y6GWN5PTC",
+  },
+  {
+    title: "Product Management webinar",
+    issuer: "IEEE SRMIST Student Branch",
+    date: "Issued Jul 2021",
+    url: "",
+  },
+  {
+    title: "Artificial Intelligence",
+    issuer: "Simplilearn",
+    date: "Issued Sep 2021",
+    url: "",
+  },
+  {
+    title: "Robotic Process Automation (RPA)",
+    issuer: "Simplilearn",
+    date: "Issued Sep 2021",
+    url: "",
+  },
+  // {
+  //   title: "ITIL Foundation Certificate in IT Service Management",
+  //   issuer: "AXELOS Global Best Practice",
+  //   date: "Issued Aug 2022",
+  //   url: "https://www.credly.com/your-badge-url",
+  // },
+  // {
+  //   title: "Red Hat Certified System Administrator (RHCSA)",
+  //   issuer: "Red Hat",
+  //   date: "Issued Jul 2022",
+  //   url: "https://www.credly.com/your-badge-url",
+  // },
+  // {
+  //   title: "CompTIA Security+",
+  //   issuer: "CompTIA",
+  //   date: "Issued Jun 2022",
+  //   url: "https://www.credly.com/your-badge-url",
+  // },
+  // {
+  //   title: "Google Analytics Individual Qualification",
+  //   issuer: "Google",
+  //   date: "Issued May 2022",
+  //   url: "https://skillshop.exceedlms.com/your-badge-url",
+  // },
+  // {
+  //   title: "Certified Data Professional (CDP)",
+  //   issuer: "ICCP",
+  //   date: "Issued Apr 2022",
+  //   url: "https://www.iccp.org/your-badge-url",
+  // },
+  // {
+  //   title: "Tableau Desktop Specialist",
+  //   issuer: "Tableau",
+  //   date: "Issued Mar 2022",
+  //   url: "https://www.credly.com/your-badge-url",
+  // },
+  
+]; 

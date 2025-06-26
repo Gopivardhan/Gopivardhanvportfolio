@@ -1,12 +1,14 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useState } from "react";
 
 import AnimatedCounter from "../components/AnimatedCounter";
 import Button from "../components/Button";
 import { words } from "../constants";
-import HeroExperience from "../components/models/hero_models/HeroExperience";
 
 const Hero = () => {
+  const [theme, setTheme] = useState('dark');
+
   useGSAP(() => {
     gsap.fromTo(
       ".hero-text h1",
@@ -27,7 +29,7 @@ const Hero = () => {
           <div className="flex flex-col gap-7">
             <div className="hero-text">
               <h1>
-                Shaping
+                Transforming
                 <span className="slide">
                   <span className="wrapper">
                     {words.map((word, index) => (
@@ -46,13 +48,15 @@ const Hero = () => {
                   </span>
                 </span>
               </h1>
-              <h1>into Real Projects</h1>
-              <h1>that Deliver Results</h1>
+              <h1>into Real-World Solutions</h1>
+              <h1>that Make an Impact</h1>
             </div>
 
-            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I’m Adrian, a developer based in Croatia with a passion for
-              code.
+            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none flex flex-col">
+              <span>Hi, I'm Gopi Vardhan V,</span>
+              <span>a developer based in Orlando</span>
+              <span>with a passion for building intelligent,</span>
+              <span>scalable systems across web, AI, and data platforms.</span>
             </p>
 
             <Button
@@ -65,8 +69,23 @@ const Hero = () => {
 
         {/* RIGHT: 3D Model or Visual */}
         <figure>
-          <div className="hero-3d-layout">
-            <HeroExperience />
+          <div className="hero-3d-layout relative">
+            <img
+              src="/images/hero-light.png" /* Placeholder for light theme image */
+              alt="Hero Light Theme"
+              className={`w-full h-full object-cover rounded-xl ${theme === 'light' ? 'block' : 'hidden'}`}
+            />
+            <img
+              src="/images/hero-dark.png" /* Placeholder for dark theme image */
+              alt="Hero Dark Theme"
+              className={`w-full h-full object-cover rounded-xl ${theme === 'dark' ? 'block' : 'hidden'}`}
+            />
+            <button
+              onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+              className="absolute bottom-5 right-5 p-2 rounded-full bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-200 text-sm focus:outline-none transition-colors duration-300"
+            >
+              {theme === 'light' ? '🌙 Dark' : '☀️ Light'}
+            </button>
           </div>
         </figure>
       </div>

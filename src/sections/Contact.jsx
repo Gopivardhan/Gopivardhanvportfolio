@@ -2,7 +2,6 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import TitleHeader from "../components/TitleHeader";
-import ContactExperience from "../components/models/contact/ContactExperience";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -12,6 +11,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [theme, setTheme] = useState('dark');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -43,8 +43,8 @@ const Contact = () => {
     <section id="contact" className="flex-center section-padding">
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
-          title="Get in Touch – Let’s Connect"
-          sub="💬 Have questions or ideas? Let’s talk! 🚀"
+          title="Get in Touch – Let's Connect"
+          sub="💬 Have questions or ideas? Let's talk! 🚀"
         />
         <div className="grid-12-cols mt-16">
           <div className="xl:col-span-5">
@@ -62,7 +62,7 @@ const Contact = () => {
                     name="name"
                     value={form.name}
                     onChange={handleChange}
-                    placeholder="What’s your good name?"
+                    placeholder="What's your good name?"
                     required
                   />
                 </div>
@@ -75,7 +75,7 @@ const Contact = () => {
                     name="email"
                     value={form.email}
                     onChange={handleChange}
-                    placeholder="What’s your email address?"
+                    placeholder="What's your email address?"
                     required
                   />
                 </div>
@@ -107,10 +107,23 @@ const Contact = () => {
               </form>
             </div>
           </div>
-          <div className="xl:col-span-7 min-h-96">
-            <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
-              <ContactExperience />
-            </div>
+          <div className="xl:col-span-7 flex flex-col justify-center items-center p-5">
+            <img
+              src="/images/contact-light.png" /* Placeholder for light theme image */
+              alt="Contact Light Theme"
+              className={`w-full h-auto max-w-full ${theme === 'light' ? 'block' : 'hidden'}`}
+            />
+            <img
+              src="/images/contact-dark.png" /* Placeholder for dark theme image */
+              alt="Contact Dark Theme"
+              className={`w-full h-auto max-w-full ${theme === 'dark' ? 'block' : 'hidden'}`}
+            />
+            <button
+              onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+              className="mt-5 p-2 rounded-full bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-200 text-sm focus:outline-none transition-colors duration-300"
+            >
+              {theme === 'light' ? '🌙 Dark' : '☀️ Light'}
+            </button>
           </div>
         </div>
       </div>
